@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {Link} from 'react-router-dom';
 
-function Nav() {
+function Nav({count}) {
 
     const navStyle = {
         color: 'white'
@@ -18,7 +18,7 @@ function Nav() {
                 <li>Shop</li>
             </Link>
             <Link style={navStyle} to='/cart'>
-                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><i className="fas fa-shopping-cart"></i>{count}</li>
             </Link>
         </ul>
     </nav>

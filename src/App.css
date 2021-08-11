@@ -110,3 +110,12 @@ nav a {
   height: 20px;
   width:  60px;
 }
+
+/* Cart Section */
+
+.shopping-cart-holder { 
+  font-family: 'Limelight', cursive;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 500px;
+}
