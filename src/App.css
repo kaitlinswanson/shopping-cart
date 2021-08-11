@@ -1,13 +1,16 @@
 .App { 
   text-align: center;
 }
-
+body { 
+  background-image: url("https://i.pinimg.com/originals/51/f1/2d/51f12deaeb63b461b1e096be1790bbb0.jpg");
+}
 nav{ 
+  font-family: 'Yesteryear', cursive;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rgb(0, 10, 102);
+  background-color: rgb(73, 130, 216);
   color: white;
 }
 
@@ -18,4 +21,17 @@ nav{
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  font-size: 20px;
+}
+
+.nav-links a { 
+  text-decoration: none;
+}
+
+nav a { 
+  text-decoration: none;
+}
+
+.home-link { 
+  font-size: 30px;
 }
