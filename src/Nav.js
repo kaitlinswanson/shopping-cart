@@ -11,7 +11,7 @@ function Nav() {
   return (
     <nav>
         <Link style={navStyle} to='/'>
-        <h2 className="home-link">90's Shop</h2>
+        <h2 className="home-link">Nostalgia</h2>
         </Link>
         <ul className="nav-links">
             <Link style={navStyle} to='/shop'>

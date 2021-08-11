@@ -2,15 +2,18 @@
   text-align: center;
 }
 body { 
-  background-image: url("https://i.pinimg.com/originals/51/f1/2d/51f12deaeb63b461b1e096be1790bbb0.jpg");
+  background-image: url("https://t4.ftcdn.net/jpg/03/72/01/93/360_F_372019308_RP23W1jNhafm3oLxvaQMRyLMCobkVokn.jpg");
 }
+
+/* Nav section */
+
 nav{ 
   font-family: 'Yesteryear', cursive;
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rgb(73, 130, 216);
+  background-color: rgba(225, 163, 240, 0.76);
   color: white;
 }
 
@@ -32,6 +35,42 @@ nav a {
   text-decoration: none;
 }
 
+/* Home section */
+
 .home-link { 
   font-size: 30px;
+}
+
+#home-image { 
+  margin-top: 20px;
+  width: 40vw;
+}
+
+
+/* Shop section */
+
+.shop { 
+  display: flex;
+  justify-content: center;
+}
+.card-holder { 
+  font-family: 'Limelight', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 900px;
+  flex-wrap: wrap;
+
+
+}
+
+.item-card { 
+  display: flex;
+  width: 250px;
+  height: 350px;
+  justify-content: center;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
 }

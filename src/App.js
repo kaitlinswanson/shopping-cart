@@ -24,7 +24,7 @@ function App() {
 const Home = () => {
   return (
     <div>
-      <h1>HOME</h1>
+      <img id="home-image" alt="90s skateboarding girl" src="https://i1.sndcdn.com/artworks-jpIdvMOSCrtojB1f-Hwux6A-t500x500.jpg"></img>
     </div>
   )
 }
