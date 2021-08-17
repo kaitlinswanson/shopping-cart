@@ -23,7 +23,7 @@ function App() {
   function addToCart(e) {
     setCart((cart) => [
       ...cart, 
-      (e.target.id), ]);
+      {text: e.target.id, key: Math.random() * 1000}]);
       console.log(cart)
       }
 
@@ -43,9 +43,13 @@ function App() {
           />
         </Route>
 
-        <Route exact path="/cart" component={Cart}
-        cart={cart}
-        />
+        <Route exact path="/cart">
+          <Cart 
+            cart={cart}
+          />
+        </Route> 
+        
+      
         </Switch>
     </div>
     </Router>

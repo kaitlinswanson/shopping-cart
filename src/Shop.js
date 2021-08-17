@@ -8,7 +8,7 @@ import './App.css';
 function Shop(props) {
 
     function updateCart(e) {
-        props.addToCart(e);
+        props.addToCart(e); 
         props.increaseTotal();
     }
 
