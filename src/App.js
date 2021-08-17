@@ -12,22 +12,27 @@ function App() {
   //item in cart will be made up of item name, quantity(up and down arrow), delete option
   const [count, setTotalCount] = useState(0)
   //a state for items already added and a state for new items maybe
-
+  //const [quantity, setQuantity] = useState()
   //a function to increase the total number of items in the cart (can be seen next to shopping cart icon and item total on cart page)
   function increaseTotal() {
     setTotalCount(prevCount => prevCount + 1)
   }
 
+  //function addQuantity() { 
+    //let q = quantity; 
+    //setQuantity(q + 1)
+  //}
+
+
   //a function to push the item into the cart
-//doesnt add the very first item right now
   function addToCart(e) {
     setCart((cart) => [
       ...cart, 
-      {text: e.target.id, key: Math.random() * 1000}]);
+      {text: e.target.id, key: Math.random() * 1000, quantity: (parseFloat(e.target.value) + 1)}]);
       console.log(cart)
       }
 
-
+    
   return (
     <Router>
     <div className="App">

@@ -113,9 +113,32 @@ nav a {
 
 /* Cart Section */
 
+.cart-div { 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cart-title { 
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
 .shopping-cart-holder { 
   font-family: 'Limelight', cursive;
   display: flex;
+  justify-content: center;
   flex-direction: column-reverse;
-  width: 500px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.items {
+  display: flex;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: rgba(226, 216, 230, 0.842);
+  height: 30px;
+
 }
