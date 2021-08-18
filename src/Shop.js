@@ -3,7 +3,7 @@ import './App.css';
 
 
 //onClick of the add to cart buttons, it should run a function that adds the info to the cart and runs the function 
-//"increaseCount" to add to the shopping cart number total
+//"increaseTotal" to add to the shopping cart number total 
 
 function Shop(props) {
 

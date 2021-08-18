@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-//add a useEffect for 'your cart is empty' if no items in cart 
-function Cart({cart}) {
+function Cart({cart, count}) {
 
   return (
     <div className="cart-div">
@@ -12,6 +11,7 @@ function Cart({cart}) {
             )
             )
             }
+            <div className="shopping-cart-counter">Total Items:{count}</div>
         </div>
     </div>
   );

@@ -11,18 +11,11 @@ function App() {
   const [cart, setCart] = useState([]);
   //item in cart will be made up of item name, quantity(up and down arrow), delete option
   const [count, setTotalCount] = useState(0)
-  //a state for items already added and a state for new items maybe
-  //const [quantity, setQuantity] = useState()
+  
   //a function to increase the total number of items in the cart (can be seen next to shopping cart icon and item total on cart page)
   function increaseTotal() {
     setTotalCount(prevCount => prevCount + 1)
   }
-
-  //function addQuantity() { 
-    //let q = quantity; 
-    //setQuantity(q + 1)
-  //}
-
 
   //a function to push the item into the cart
   function addToCart(e) {
@@ -51,6 +44,7 @@ function App() {
         <Route exact path="/cart">
           <Cart 
             cart={cart}
+            count={count}
           />
         </Route> 
         
